@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-sm-12 d-flex justify-content-center">
+    <ngb-carousel>
+
+        <ng-template ngbSlide *ngFor="let slide of lander.slides; let-i = index;>
+          <!-- I would like to figure out src set/or some type of mobile solution for this. -->
+          <img src="{{i.pic.src}}" alt="{{i.pic.alt}}">
+          <div class="carousel-caption">
+            <h1>{{i.title}}</h1>
+            <p>{{i.caption}}</p>
+          </div>
+        </ng-template>
+
+    </ngb-carousel>    
+  </div>
+</div>
